@@ -58,7 +58,7 @@ def test_foursquare(api_key):
     url = "https://places-api.foursquare.com/places/search"
     headers = {
         "Accept": "application/json",
-        "Authorization": api_key,  # Must start with fsq3...
+        "Authorization": api_key,
         "X-Places-Api-Version": "2025-06-17"
     }
     params = {
@@ -69,11 +69,11 @@ def test_foursquare(api_key):
 
     response = requests.get(url, headers=headers, params=params)
     data = response.json()
-    print(json.dumps(data, indent=2))
+    print(json.dumps(data, indent=2)) # print the message or result
 
     if 'results' in data and data['results']:
         print("\nFirst restaurant:")
-        print(json.dumps(data['results'][0], indent=2))
+        print(json.dumps(data['results'][0], indent=2)) # print the first restaurant
     else:
         print("\nNo results found or 'results' key missing.")
 
