@@ -1,4 +1,20 @@
-# This is a sample Python script.
+# Week 1: Introduction to APIs & Setup
+# Tasks:
+# ●	Learn API basics: keys, authentication, request/response.
+#
+# ●	Set up a Python environment (with requests, pandas, and json).
+#
+# ●	Register for API keys from:
+#
+# ○	Google Places
+#
+# ○	Yelp Fusion
+#
+# ○	Foursquare
+#
+# Milestone:
+# ●	API keys obtained and successful test call made to one API.
+
 
 import requests
 import pandas
@@ -16,7 +32,7 @@ def test_google_places(api_key):
 
 # Replace with your actual API key
 test_google_places("AIzaSyA7Tu0WvLEhi82RRGOaeti86QL5V8CVZiU")
-
+# succeed in Google
 
 
 def test_yelp(api_key):
@@ -35,7 +51,7 @@ def test_yelp(api_key):
 
 # Replace with your actual Yelp API key
 test_yelp("Txk6TFuWq1kMZGgBFTMLYUC11wWSyfp5mNwonT016ObyRrxmSxrrwzIjykZ6C2Ncwb8gn2PlWLTHi8O-hmdZtgVAYNl_H2Gc4XJbY1b4MbVkn9X8pp2UOiEjzAtuaHYx")
-
+# succeed in Yelp
 
 
 def test_foursquare(api_key):
@@ -63,7 +79,7 @@ def test_foursquare(api_key):
 
 # Replace this with the FULL key starting with fsq3...
 test_foursquare("fsq33x2GQQ6fBK79kRuQvMYdE3yRfJPSMJr6j9B1vww8I2M=")
-
-
-# SLD0YJ3FBSOQGEDVTWD3FOXZJONCOJLPZSUQQLL155AT1RLA
-# fsq33x2GQQ6fBK79kRuQvMYdE3yRfJPSMJr6j9B1vww8I2M=
+# failed in Foursquare
+# having troubles with version and token
+# Service key: SLD0YJ3FBSOQGEDVTWD3FOXZJONCOJLPZSUQQLL155AT1RLA
+# legacy key: fsq33x2GQQ6fBK79kRuQvMYdE3yRfJPSMJr6j9B1vww8I2M=
